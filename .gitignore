@@ -1,0 +1,10 @@
+# Archivos de trabajo
+PRODUCT.md
+DESIGN.md
+.impeccable/
+.claude/
+*.log
+_*.html
+Thumbs.db
+desktop.ini
+.DS_Store

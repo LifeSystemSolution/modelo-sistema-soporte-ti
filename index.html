@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es-PE" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>LifeDesk · Mesa de ayuda TI con asistente virtual | LifeSystem Solutions</title>
+  <meta name="description" content="Mesa de ayuda de TI para empresas peruanas: un asistente resuelve lo básico y califica la urgencia de cada ticket de 0 a 100. Demo en vivo.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23e30613'/%3E%3Cpath d='M9 8v13.5h7' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css?v=8">
+  <link rel="stylesheet" href="css/app.css?v=8">
+  <link rel="stylesheet" href="css/landing.css?v=8">
+</head>
+<body class="landing">
+  <header class="l-nav">
+    <div class="l-wrap l-nav-in">
+      <a class="marca" href="#" id="l-logo" aria-label="LifeDesk, inicio"></a>
+      <nav class="l-links" aria-label="Secciones">
+        <a href="#como">Cómo funciona</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#ahorro">Ahorro</a>
+        <a href="#ia">IA real</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" href="#demo">Probar demo</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Portada: el cálculo de urgencia en vivo -->
+    <section class="l-hero">
+      <div class="l-wrap l-hero-in">
+        <div class="l-hero-txt">
+          <h1>Que lo urgente se atienda <em>primero</em>.</h1>
+          <p class="l-lead">LifeDesk es la mesa de ayuda de TI para tu empresa. Un asistente resuelve lo básico en minutos y, si no puede, crea el ticket con su urgencia calculada de 0 a 100 y lo asigna al técnico correcto.</p>
+          <div class="fila l-cta">
+            <a class="btn btn-primary btn-lg" href="#demo">Probar el demo</a>
+            <a class="btn btn-lg l-btn-claro" id="wa-hero" href="#" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+          </div>
+          <p class="l-nota">Sin instalar nada. Funciona en PC, tablet y celular.</p>
+        </div>
+
+        <div class="l-triaje" id="triaje" aria-label="Prueba el cálculo de urgencia">
+          <h2>Pruébalo: ¿qué pasó?</h2>
+          <div class="l-q">
+            <span>Problema</span>
+            <div class="chips" data-campo="caso"></div>
+          </div>
+          <div class="l-q">
+            <span>¿A quién afecta?</span>
+            <div class="chips" data-campo="alcance"></div>
+          </div>
+          <div class="l-q">
+            <span>¿Puede seguir trabajando?</span>
+            <div class="chips" data-campo="bloqueo"></div>
+          </div>
+          <div class="l-med" id="l-med"></div>
+          <p class="l-med-pie" id="l-med-pie"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problema -->
+    <section class="l-sec">
+      <div class="l-wrap l-dos">
+        <h2 class="l-h2">Hoy el soporte se pide por WhatsApp, por correo y a gritos.</h2>
+        <ul class="l-dolores">
+          <li>
+            <b>Se atiende al que más insiste.</b>
+            <span>Mientras tanto, la caja que no factura a SUNAT espera detrás de un mouse sin pilas.</span>
+          </li>
+          <li>
+            <b>El técnico repite lo mismo diez veces al día.</b>
+            <span>Reiniciar la impresora, restablecer una contraseña, configurar el micrófono de Teams.</span>
+          </li>
+          <li>
+            <b>Nadie sabe cuánto demora ni cuánto cuesta.</b>
+            <span>Sin tiempos medidos no hay forma de mejorar ni de justificar más personal o equipos nuevos.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cómo funciona, con capturas del sistema -->
+    <section class="l-sec l-gris" id="como">
+      <div class="l-wrap">
+        <h2 class="l-h2 l-h2-c">Cómo funciona</h2>
+        <div class="l-paso">
+          <div class="l-paso-t">
+            <h3>El empleado le cuenta el problema al asistente</h3>
+            <p>Elige un tema o lo escribe con sus palabras. El asistente lo guía paso a paso con instrucciones cortas. Si funciona, listo: no hizo falta ningún técnico.</p>
+          </div>
+          <figure class="l-cap"><img src="img/capturas/asistente.png" alt="Pantalla del asistente con los temas de ayuda: impresora, internet, correo, contraseña y más" loading="lazy" width="1440" height="900"></figure>
+        </div>
+        <div class="l-paso l-paso-inv">
+          <div class="l-paso-t">
+            <h3>Si no se resuelve, el ticket llega ya calificado</h3>
+            <p>Dos preguntas bastan: ¿a quién afecta? y ¿puedes seguir trabajando? LifeDesk suma el área, las palabras de riesgo (SUNAT, virus, servidor) y el contexto, y muestra por qué le dio esa prioridad.</p>
+          </div>
+          <figure class="l-cap"><img src="img/capturas/ticket.png" alt="Detalle de un ticket con el medidor de urgencia y los puntos de cada factor" loading="lazy" width="1440" height="900"></figure>
+        </div>
+        <div class="l-paso">
+          <div class="l-paso-t">
+            <h3>Cada técnico ve primero lo que más importa</h3>
+            <p>La cola se ordena por prioridad y por el tiempo que queda. Si un ticket es difícil, se escala de N1 a N2 o N3 con un botón y el historial viaja con él.</p>
+          </div>
+          <figure class="l-cap"><img src="img/capturas/cola.png" alt="Cola del técnico ordenada por prioridad y plazo" loading="lazy" width="1440" height="900"></figure>
+        </div>
+        <div class="l-paso l-paso-inv">
+          <div class="l-paso-t">
+            <h3>La jefatura mide tiempos y ahorro</h3>
+            <p>Cumplimiento de plazos, problemas que se repiten, equipos que fallan demasiado y cuánto ahorra el asistente en horas y en soles.</p>
+          </div>
+          <figure class="l-cap"><img src="img/capturas/reportes.png" alt="Reportes con tickets por día, por área y ahorro estimado" loading="lazy" width="1440" height="900"></figure>
+        </div>
+        <p class="l-pie-cap">Capturas del demo funcionando, con datos de una empresa ficticia.</p>
+      </div>
+    </section>
+
+    <!-- Módulos -->
+    <section class="l-sec" id="modulos">
+      <div class="l-wrap">
+        <h2 class="l-h2">Todo lo que trae</h2>
+        <div class="l-mods" id="l-mods"></div>
+      </div>
+    </section>
+
+    <!-- Calculadora de ahorro -->
+    <section class="l-sec l-oscuro" id="ahorro">
+      <div class="l-wrap l-calc">
+        <div>
+          <h2 class="l-h2">¿Cuánto ahorraría tu empresa?</h2>
+          <p class="l-sub">Mueve los valores. Es una estimación: el porcentaje real depende de qué tan seguido ocurren los problemas básicos en tu empresa.</p>
+          <form class="l-form" id="f-ahorro">
+            <label class="campo">Personas que usan computadora<input type="number" name="emp" min="5" max="5000" value="80" inputmode="numeric"></label>
+            <label class="campo">Pedidos de ayuda por persona al mes<input type="number" name="ped" min="0.5" max="20" step="0.5" value="3"></label>
+            <label class="campo">Casos que resuelve el asistente <output id="o-def">40%</output><input type="range" name="def" min="10" max="60" step="5" value="40"></label>
+            <label class="campo">Costo por hora del técnico (S/)<input type="number" name="ct" min="5" max="200" value="18"></label>
+            <label class="campo">Costo por hora del empleado (S/)<input type="number" name="ce" min="5" max="200" value="15"></label>
+          </form>
+        </div>
+        <div class="l-res" id="r-ahorro" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Costo de IA real -->
+    <section class="l-sec" id="ia">
+      <div class="l-wrap l-calc">
+        <div>
+          <h2 class="l-h2">¿Y si el asistente usa IA de verdad?</h2>
+          <p class="l-sub">En el demo, el asistente funciona con reglas. Con IA entiende frases libres, hace preguntas de seguimiento y aprende de tus guías. Esto costaría el uso del modelo al mes:</p>
+          <form class="l-form" id="f-ia">
+            <label class="campo">Modelo
+              <select name="modelo">
+                <option value="haiku">Claude Haiku 5.5 · rápido y económico</option>
+                <option value="sonnet">Claude Sonnet 5.5 · más criterio</option>
+                <option value="opus">Claude Opus 5.5 · el más capaz</option>
+              </select>
+            </label>
+            <label class="campo">Conversaciones al mes<input type="number" name="conv" min="10" max="200000" value="240" inputmode="numeric"><small>Se llena con la calculadora de ahorro</small></label>
+            <label class="campo">Mensajes por conversación<input type="number" name="turnos" min="2" max="30" value="6"></label>
+            <label class="campo">Tipo de cambio (S/ por US$)<input type="number" name="tc" min="1" max="10" step="0.01" value="3.75"><small>Referencial: actualízalo el día que cotices</small></label>
+          </form>
+        </div>
+        <div>
+          <div class="l-res l-res-claro" id="r-ia" aria-live="polite"></div>
+          <details class="l-det">
+            <summary>Cómo se calcula</summary>
+            <p>Cada mensaje envía al modelo unas 5,000 «fichas» (tokens) de entrada: las instrucciones, las guías de tu empresa y la conversación; y recibe unas 250 de respuesta. Precios de lista de Anthropic por millón de tokens, consultados el 3 de noviembre de 2026: Haiku 5.5 US$ 0.10 entrada / 0.50 salida; Sonnet 5.5 US$ 2 / 10; Opus 5.5 US$ 4 / 20. Con caché de instrucciones (prompt caching) la parte repetida cuesta menos. No incluye IGV, el servidor que conecta la página con la IA ni la implementación.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Probar demo -->
+    <section class="l-sec l-gris" id="demo">
+      <div class="l-wrap">
+        <h2 class="l-h2 l-h2-c">Pruébalo ahora</h2>
+        <p class="l-sub l-c">Entra con el rol que quieras. Hoy empieza en cero: lo que hagas aparece en vivo en los demás roles del mismo navegador.</p>
+        <div class="l-roles">
+          <a class="rol" href="app.html?demo=empleado"><span id="ill-emp"></span><span><b>Empleado</b><span>Pide ayuda al asistente y sigue su ticket.</span></span></a>
+          <a class="rol" href="app.html?demo=tecnico"><span id="ill-tec"></span><span><b>Técnico</b><span>Atiende su cola ordenada por urgencia.</span></span></a>
+          <a class="rol" href="app.html?demo=jefe"><span id="ill-jef"></span><span><b>Jefa de TI</b><span>Tablero, reportes, reglas y plazos.</span></span></a>
+        </div>
+        <div class="l-sim">
+          <h3>Qué es simulado en el demo</h3>
+          <ul>
+            <li>La empresa, las personas y los equipos son ficticios.</li>
+            <li>El asistente usa reglas, no IA.</li>
+            <li>La consulta RENIEC, los avisos por WhatsApp, los adjuntos y la lectura de etiquetas con cámara.</li>
+            <li>La temperatura y la salud del disco de los equipos.</li>
+          </ul>
+          <p>Los datos se guardan solo en tu navegador.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="l-sec l-oscuro l-fin">
+      <div class="l-wrap l-c">
+        <h2 class="l-h2">¿Lo quieres para tu empresa?</h2>
+        <p class="l-sub">Lo adaptamos a tus áreas, tus equipos y tus plazos. Escríbenos y te mostramos el demo en una llamada.</p>
+        <a class="btn btn-primary btn-lg" id="wa-fin" href="#" target="_blank" rel="noopener"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="l-foot">
+    <div class="l-wrap fila entre">
+      <span>LifeDesk es un producto de <b>LifeSystem Solutions</b> · Lima, Perú</span>
+      <span>Demo con datos ficticios</span>
+    </div>
+  </footer>
+
+  <script src="js/icons.js?v=8"></script>
+  <script src="js/store.js?v=8"></script>
+  <script src="js/triaje.js?v=8"></script>
+  <script src="js/seed.js?v=8"></script>
+  <script src="js/ui.js?v=8"></script>
+  <script src="js/landing.js?v=8"></script>
+</body>
+</html>

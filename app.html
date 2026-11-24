@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es-PE" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>LifeDesk · Mesa de ayuda TI</title>
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="Demo de LifeDesk, mesa de ayuda TI con asistente virtual y triaje automático. Datos ficticios.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23e30613'/%3E%3Cpath d='M9 8v13.5h7' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css?v=8">
+  <link rel="stylesheet" href="css/app.css?v=8">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('lifedesk-tema')||'light'}catch(e){}</script>
+</head>
+<body>
+  <div id="selector" class="selector" hidden></div>
+
+  <div class="app">
+    <aside class="side">
+      <a class="marca" id="side-logo" href="index.html" aria-label="LifeDesk, volver a la presentación"></a>
+      <nav id="nav" class="nav" aria-label="Secciones"></nav>
+      <div class="side-pie">
+        <div class="side-user" id="side-user"></div>
+        <button type="button" class="side-btn" id="btn-salir">Cambiar de rol</button>
+      </div>
+    </aside>
+
+    <div class="main" id="main">
+      <header class="top">
+        <h1 id="titulo">LifeDesk</h1>
+        <div class="top-acc">
+          <button type="button" class="btn btn-line btn-sm" id="btn-sim" hidden title="Crea un ticket de ejemplo como si lo enviara un empleado">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+            <span>Simular ticket</span>
+          </button>
+          <button type="button" class="btn btn-ghost btn-icon btn-sm hide-m" id="btn-atajos" aria-label="Atajos de teclado">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 10h.5M10 10h.5M14 10h.5M18 10h.5M7 14h10"/></svg>
+          </button>
+          <button type="button" class="btn btn-ghost btn-icon btn-sm" id="btn-tema" aria-label="Cambiar tema"></button>
+        </div>
+      </header>
+      <p class="demo-aviso">Demo con datos ficticios · asistente, RENIEC y avisos por WhatsApp simulados</p>
+      <main id="vista" class="vista"></main>
+    </div>
+
+    <nav id="tabbar" class="tabbar" aria-label="Secciones"></nav>
+  </div>
+
+  <script src="js/icons.js?v=8"></script>
+  <script src="js/store.js?v=8"></script>
+  <script src="js/triaje.js?v=8"></script>
+  <script src="js/seed.js?v=8"></script>
+  <script src="js/ui.js?v=8"></script>
+  <script src="js/tickets.js?v=8"></script>
+  <script src="js/asistente.js?v=8"></script>
+  <script src="js/tablero.js?v=8"></script>
+  <script src="js/equipos.js?v=8"></script>
+  <script src="js/mantenimiento.js?v=8"></script>
+  <script src="js/kb.js?v=8"></script>
+  <script src="js/reportes.js?v=8"></script>
+  <script src="js/ajustes.js?v=8"></script>
+  <script src="js/app.js?v=8"></script>
+</body>
+</html>
